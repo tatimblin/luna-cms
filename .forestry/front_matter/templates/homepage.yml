@@ -2,9 +2,21 @@
 hide_body: true
 is_partial: false
 fields:
+- type: text
+  default: Luna On Pine
+  label: Site Title
+  name: site_title
+  description: Appears on tab and search results
 - type: blocks
   template_types:
   - amenities
   label: Amenities
   name: amenities
   description: Section of the site
+- type: text
+  hidden: true
+  default: home
+  label: Layout
+  name: layout
+  config:
+    required: true
