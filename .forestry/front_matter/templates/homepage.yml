@@ -7,12 +7,6 @@ fields:
   label: Site Title
   name: site_title
   description: Appears on tab and search results
-- type: blocks
-  template_types:
-  - amenities
-  label: Amenities
-  name: amenities
-  description: Section of the site
 - type: text
   hidden: true
   default: home
