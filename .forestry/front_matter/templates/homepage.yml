@@ -14,11 +14,7 @@ fields:
   name: layout
   config:
     required: true
-- type: blocks
-  name: site_content
-  label: Site Content
-  template_types:
-  - introduction
-  - amenities
+- type: include
+  template: introduction
 pages:
 - index.md
