@@ -7,12 +7,14 @@
              <img src="images/luna-tenant-lookingBack.png" alt="Luna Tenant Looking Back">
             </div>
             
+            {% if page.introduction_callout_1 %}
             <div class="intro-text-copy intro-item">
-                <h2>You Have<br /> Big Dreams</h2>
-                <h6>MAKE THEM HAPPEN AT LUNA</h6>
-                <p>Luna is an apartment building located near UPenn and designed to inspire those within it. Imagine late-night study sessions that lead to groundbreaking discoveries, rooftop stargazing that ignites innovation, and next door neighbors who challenge your way of thinking.</p>
+                <h2>{{ page.introduction_callout_1.title }}</h2>
+                <h6>{{ page.introduction_callout_1.sub_title }}</h6>
+                <p>{{ page.introduction_callout_1.body }}</p>
              
             </div>
+            {% endif %}
             
         </div>
         
