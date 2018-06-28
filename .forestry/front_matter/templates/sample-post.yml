@@ -8,4 +8,4 @@ fields:
   name: author
   description: Who wrote this
 pages:
-- _posts/hello-world.md
+- _posts/2018-06-28-hello-world.md
