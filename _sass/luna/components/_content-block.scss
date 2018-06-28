@@ -1,0 +1,24 @@
+/*
+ * General Content Block
+ *
+ * This file styles general content blocks that are nested within a container.
+ *
+ *****************************************************************************/
+
+
+
+.col-6 {
+    @include grid-column(12, $grid);
+    @include grid-media($grid-large) {
+        @include grid-column(6);
+    }
+}
+
+.intro-item, .neighborhood-item {
+    @include grid-column(12, $grid);
+    @include grid-media($grid-large) {
+        @include grid-column(6);
+    }
+}
+
+

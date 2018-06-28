@@ -1,0 +1,157 @@
+/*
+ * Base Syles
+ *
+ * This file contains very basic styles.
+ *
+ *****************************************************************************/
+
+
+html {
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+body {
+    margin: 0;
+    background-color: $brand-eggshell;
+}
+
+/*
+ * Make all elements from the DOM inherit from the parent box-sizing
+ Since `*` has a specificity of 0, it does not override the `html` value
+ making all elements inheriting from the root box-sizing value
+ *
+ *********************************************************/
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+	border: 0;
+	height: auto;
+	max-width: 100%;
+}
+
+p,
+ul,
+ol,
+pre,
+table,
+blockquote {
+    margin: 0 0 1rem 0;
+    padding: 0;
+}
+
+ul ul,
+ol ol,
+ul ol,
+ol ul {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul, ol {
+    list-style-position: inside;
+    padding-left: 1rem;
+}
+
+blockquote {
+
+}
+
+input[type='color'],
+input[type='date'],
+input[type='datetime'],
+input[type='datetime-local'],
+input[type='email'],
+input[type='month'],
+input[type='number'],
+input[type='password'],
+input[type='search'],
+input[type='tel'],
+input[type='text'],
+input[type='time'],
+input[type='url'],
+input[type='week'],
+input:not([type]),
+textarea {
+    background: transparent;
+    border: 1px solid transparent;
+    border-radius: 0;
+	font: normal 400 type-scale(base) $sans-serif-stack;
+    -webkit-appearance: none;
+	-webkit-border-radius: 0;
+	&:focus {
+		outline: 0;
+	}
+    &:required {
+        box-shadow: none;
+    }
+}
+
+textarea {
+	resize: none;
+}
+
+button,
+[type='button'],
+[type='reset'],
+[type='submit'] {
+    background-color: $white;
+    color: $black;
+    cursor: pointer;
+	display: inline-block;
+	padding: 1rem;
+    position: relative;
+	&:active, &:focus {
+		outline: 0;
+	}
+}
+
+// Chrome + Safari
+::-webkit-input-placeholder {
+    color: $black;
+    opacity: 1 !important;
+}
+
+// Firefox 18
+:-moz-placeholder {
+    color: $black;
+    opacity: 1 !important;
+}
+
+// Firefox 19
+::-moz-placeholder {
+    color: $black;
+    opacity: 1 !important;
+}
+
+:-ms-input-placeholder {
+   color: $black;
+}
+
+strong,
+b {
+    font-weight: $font-bold-weight;
+}
+
+em,
+i {
+    font-style: italic;
+}
+
+hr {
+	background-color: $black;
+	border: 0;
+	display: block;
+	height: 1px;
+	margin: 0;
+	padding: 0;
+}

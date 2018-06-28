@@ -1,0 +1,152 @@
+/*
+ * General Container Elements
+ *
+ * This file contains the site top-level and general wrapper elements.
+ *
+ *****************************************************************************/
+
+
+.site {
+
+}
+
+.page-content {
+    background-color: $brand-eggshell;
+    transition: background-color 600ms $ease;
+    
+    .top-nav_wrap {
+        transition: background-color 600ms $ease;
+    }
+    .side-nav-item a:before {
+        transition: border 600ms $ease;
+    }
+    .side-nav .active a:before {
+        transition: background-color 600ms $ease;
+    }
+    p, .top-nav a, #menu a, .btn a {
+        transition: color 600ms $ease;
+    }
+    .btn {
+        transition: border 600ms $ease;
+    }
+}
+
+.night {
+    background-color: $brand-charcoal;
+    
+    p, span, a {
+        color: $brand-eggshell;
+    }
+    
+    .page-content {
+        background-color: $brand-charcoal;
+        
+        .top-nav_wrap {
+            background-color: $brand-charcoal;
+            
+            .top-menu {
+                &-slice {
+                    background-color: $brand-eggshell;
+                }
+            }
+        }
+        .side-nav-item-bullet {
+            border-color: $brand-eggshell;
+        }
+        .side-nav-item a { 
+            .side-nav-bullet {
+                background-color: $brand-eggshell;
+            }
+        }
+        .apartment-tab-link {
+            color: $brand-eggshell;
+            border: 1px solid $brand-eggshell;
+            border-top: none; border-left:none;
+            
+            @include on-event {
+                background-color: darken($brand-charcoal, 7%);
+            }
+            
+            &:first-child {
+                border-left: 1px solid $brand-eggshell;
+            }
+        }
+        .amenity {
+            .community {
+                .intro-text-copy p {
+                    color: $brand-eggshell !important;
+                }
+                .alternate-bg {
+                    background-color: darken($brand-charcoal, 7%);
+                }
+            }
+        }
+        // SVG Animations Amenities
+        .svg-stroke{
+            stroke: $brand-eggshell;
+        }
+    
+        .svg-fill{
+            fill: $brand-charcoal;
+        }
+        
+        .svg-fill-opposite{
+            fill: $brand-eggshell;
+        }
+            
+        #light-switch{
+            fill: $brand-eggshell;
+        }
+        // end
+
+
+        p, .top-nav a, #menu a, li {
+            color: $brand-eggshell !important;
+        }
+        #menu a:hover {
+            background-color: darken($brand-charcoal, 5%);
+        }
+        .btn {
+            border: 1px solid $brand-eggshell;
+            
+            @include on-event {
+                a { color: $brand-charcoal; }
+            }
+            
+            &:before {
+                background-color: $brand-eggshell;
+            }
+            a {
+                color: $brand-eggshell;
+            }
+        }
+        .site-footer-social-item a svg {
+            path {
+                fill: #fafaed !important;
+            }
+        }
+        .site-footer-logo {
+            img {
+                filter: brightness(1000%) grayscale(100%);
+            }
+        }
+    }
+
+
+}
+
+.content-container {
+    margin: $gutter-width * 2 auto;
+    
+    @include breakpoint($large-width) {
+        margin: $gutter-width * 4 auto;
+    }
+}
+
+.content-block {
+    margin: $gutter-width * 2 auto;
+    
+    @include breakpoint($large-width) {
+        margin: $gutter-width * 6 auto;
+    }
+}

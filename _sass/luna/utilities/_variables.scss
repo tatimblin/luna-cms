@@ -1,0 +1,226 @@
+/*
+ * Variables
+ *
+ * This file collects all of the variables used throughout the website.
+ *
+ *****************************************************************************/
+
+
+/*
+ * Colors
+ *
+ *********************************************************/
+
+// Pure black
+// @type Color
+$black: #000;
+
+// Pure white
+// @type Color
+$white: #fff;
+
+// Light grey
+// @type Color
+$light-gray: lighten($black, 75%);
+
+// Medium grey
+// @type Color
+$mid-gray: lighten($black, 50%);
+
+// Dark grey
+// @type Color
+$dark-gray: lighten($black, 25%);
+
+// Brand colors
+// @type Color
+$brand-charcoal: #474745;
+
+$brand-red: #af5729;
+
+$brand-eggshell: #fafaed;
+
+// Copy text color
+// @type Color
+$head-color: $brand-red !default;
+
+$text-color: $brand-charcoal !default;
+
+
+/*
+ * Typography
+ *
+ *********************************************************/
+
+// Sans-serif font family
+// @type List
+$sans-serif-stack: 'montserrat', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
+
+// Serif font family
+// @type List
+$serif-font-stack: 'freight-display-pro', 'Georgia', 'Times New Roman', serif !default;
+
+// Headline font family
+// @type List
+$headline-stack: 'freight-display-pro', sans-serif !default;
+
+
+// Font weight
+$font-thin-weight: 200;
+$font-light-weight: 300;
+$font-regular-weight: 400;
+$font-medium-weight: 500;
+$font-semi-weight: 600;
+$font-bold-weight: 700;
+
+
+// Letter spacing
+$kerning50: 0.0625rem;
+$kerning100: 0.125rem;
+$kerning150: 0.1875rem;
+$kerning200: 0.25rem;
+$kerning250: 0.3125rem;
+
+
+// Line height
+$line-height-xs: 1.125;
+$line-height-sm: 1.25;
+$line-height-md: 1.5;
+$line-height-lg: 1.75;
+$line-height-xlg: 1.95;
+$line-height-xxlg: 2.25;
+
+
+// Modularscale settings
+$baseline: 24px;
+$modular-scale-ratio: $minor-third;
+$modular-scale-base: 16px;
+
+
+// Type Scale based on minor third scale
+// @type Map
+$type-scale: (
+	size-3: 0.579rem,
+    size-2: 0.694rem,
+    size-1: 0.833rem,
+	base: 1rem, // 16px
+	size1: 1.2rem,
+    size2: 1.44rem,
+	size3: 1.728rem,
+	size4: 2.074rem,
+	size5: 2.488rem,
+	size6: 2.986rem,
+	size7: 3.583rem,
+	size8: 4.3rem,
+	size9: 5.16rem,
+	size10: 6.192rem
+);
+
+
+/*
+ * Widths & Breakpoints
+ *
+ *********************************************************/
+
+// Breakpoints
+// @type Map
+$breakpoints: (
+	xsmall: 30em, // 480px
+    small: 40em, //	640px
+	medium: 48em, // 768px
+	large: 62em, //	992px
+    xlarge: 75em, //1170px
+	xxlarge: 90em // 1440px
+);
+
+
+// Container's maximum width
+// @type Length
+$xsmall-width: map-get($breakpoints, xsmall);
+$small-width: map-get($breakpoints, small);
+$medium-width: map-get($breakpoints, medium);
+$large-width: map-get($breakpoints, large);
+$xlarge-width: map-get($breakpoints, xlarge);
+$xxlarge-width: map-get($breakpoints, xxlarge);
+
+
+// Responsive font-size overrides
+$rfs-breakpoint: 90em;
+$rfs-breakpoint-unit: em;
+
+
+// Neat grid maps
+// @type Map
+$gutter-width: 30px;
+
+$grid: (
+    columns: 12,
+    gutter: $gutter-width
+);
+
+$grid-alt: (
+    columns: 12,
+    gutter: $gutter-width / 2,
+    media: $small-width
+);
+
+$grid-small: (
+    columns: 12,
+    gutter: 5%,
+    media: $small-width
+);
+
+$grid-medium: (
+    columns: 12,
+    gutter: 5%,
+    media: $medium-width
+);
+
+$grid-large: (
+    columns: 12,
+    gutter: 5%,
+    media: $large-width
+);
+
+$grid-xlarge: (
+    columns: 12,
+    gutter: 5%,
+    media: $xlarge-width
+);
+
+
+// Z-index map
+// @type Map
+$z-layers: (
+    bottomless-pit: -9999,
+    below: -1,
+    zero: 0,
+    default: 1,
+    above: 2,
+    middle: 99,
+    dropdown: 3000,
+    menu: 3200,
+    sidebar: 3500,
+    header: 3900,
+    overlay: 4000,
+    tippy-top: 9000
+);
+
+
+/*
+ * Animation
+ *
+ *********************************************************/
+
+$ease: cubic-bezier(0.86, 0, 0.07, 1);
+
+$alt-ease: cubic-bezier(0.77, 0, 0.175, 1);
+
+$duration: 400ms;
+
+$delay: $duration / 2;
+
+
+
+
+
+

@@ -1,0 +1,48 @@
+/*
+ * General Container Elements
+ *
+ * This file contains the site grid wrapper elements. These classes utilize
+ Bourbon's Neat grid.
+ *
+ *****************************************************************************/
+
+
+.container {
+    @include grid-container;
+	margin: $gutter-width*2 auto;
+    &.small-width {
+        max-width: $small-width
+    }
+    &.medium-width {
+        max-width: $medium-width;
+    }
+    &.large-width {
+        max-width: $large-width;
+    }
+    &.xlarge-width {
+        max-width: $xxlarge-width;
+    }
+    &.fluid {
+        max-width: none;
+    }
+}
+
+
+.row {
+    @include clearfix();
+}
+
+
+// How to use:
+
+/***
+.selector {
+    @include grid-column(12, $grid);
+    @include grid-media($grid-small) {
+        @include grid-column(6);
+    }
+    @include grid-media($grid-large) {
+        @include grid-column(3);
+    }
+}
+***/

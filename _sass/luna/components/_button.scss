@@ -1,0 +1,41 @@
+/*
+ * Buttons
+ *
+ * This file contains all styles related to the button component.
+ *
+ *****************************************************************************/
+
+
+.btn {
+    position: relative;
+    display: inline-block;
+    border: 1px solid $brand-charcoal;
+    transition: all 500ms 100ms $ease; 
+    
+    @include on-event {
+        a { color: $brand-eggshell; }
+        
+        &:before {
+            width: 100%;
+        }
+    }
+    
+    &:before {
+        content: '';
+        position: absolute;
+        width: 0; height: 100%;
+        top:0; left:0; bottom:0;
+        background-color: $brand-charcoal;
+        transition: all 500ms 100ms $ease; 
+        z-index: 0;
+    }
+    a {
+        position: relative;
+        padding: $gutter-width;
+        font-size: type-scale(size-2);
+        text-transform: uppercase;
+        letter-spacing: $kerning100;
+        line-height: type-scale(size4);
+        z-index: 1;
+    }
+}

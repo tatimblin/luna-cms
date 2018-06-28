@@ -1,0 +1,64 @@
+/*
+ * Site Footer
+ *
+ * This file contains styles that are specific to the site footer.
+ *
+ *****************************************************************************/
+
+
+.site-footer {
+    padding: 0 $gutter-width/2;
+    
+    @include breakpoint($medium-width) {
+        padding: 0;
+    }
+    
+    .container {
+        h2 {
+            margin: $gutter-width 0;
+        }
+    }
+    &-social {
+        &-item {
+            @include grid-column(12, $grid);
+            @include grid-media($grid-large) {
+                @include grid-column(4);
+            }
+            
+            padding-bottom: $gutter-width;
+            
+            @include breakpoint($medium-width) {
+                padding-bottom: 0;
+            }
+
+            svg {
+                max-width: 16px;
+                max-height: 16px;
+                margin: 0 8px;
+            }
+        }
+    }
+    &-contact {
+        padding: $gutter-width*2 0;
+        border-top: 1px solid $brand-red;
+        
+        &-item {
+            @include grid-column(12, $grid);
+            @include grid-media($grid-large) {
+                @include grid-column(4);
+            }
+            
+            img {
+                max-height: 80px;
+            }
+        }
+    }
+    &-logo {
+
+        img {
+            max-height: 40px;
+            padding: 0 15px;
+        }
+    }
+}
+
