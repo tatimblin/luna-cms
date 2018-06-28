@@ -1,0 +1,10 @@
+---
+hide_body: true
+is_partial: false
+fields:
+- type: blocks
+  template_types:
+  - amenities
+  label: Amenities
+  name: amenities
+  description: Section of the site
