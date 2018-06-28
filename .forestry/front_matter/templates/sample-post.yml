@@ -7,3 +7,5 @@ fields:
   label: Author
   name: author
   description: Who wrote this
+pages:
+- _posts/hello-world.md
