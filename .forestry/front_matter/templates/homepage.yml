@@ -20,3 +20,5 @@ fields:
   name: layout
   config:
     required: true
+pages:
+- index.md
