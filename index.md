@@ -12,9 +12,12 @@ introduction_callout_1:
 introduction_callout_2:
   title: ''
 introduction_callout_3:
-  title: ''
-  sub-title: ''
-  body: ''
+  title: Find Clarity
+  sub-title: Apartments
+  body: Life is hectic, and finding a quiet place to crash or study for a few hours
+    is essential. Luna’s studio, 1-bedroom, and 2-bedroom apartments for rent are
+    designed to offer the privacy you need to get the job done. Choose from fully-furnished,
+    unfurnished, and pet-friendly units and make Luna your peaceful escape.
 unit_features: []
 kitchen: []
 ---
