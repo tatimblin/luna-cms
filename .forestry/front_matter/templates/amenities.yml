@@ -1,0 +1,16 @@
+---
+hide_body: false
+is_partial: true
+fields:
+- type: text
+  default: Amenities
+  label: Section Name
+  name: section_name
+- type: textarea
+  name: amenities_about
+  label: Amenities About
+  default: Home to the next generation of doctors, lawyers, and generally awesome
+    individuals, Luna’s amenity spaces foster the kind of collaboration that will
+    change tomorrow. And for the times when you’d rather do your own thing, there’s
+    always a cozy spot to sneak off to.
+  description: Paragraph about your life at Luna
