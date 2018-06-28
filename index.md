@@ -12,4 +12,16 @@ site_content:
     title: Find Clarity
     sub-title: Apartments
     body: Life is hectic...
+introduction_callout_1:
+  sub_title: Hello
+  title: How
+  body: R U?
+introduction_callout_2:
+  title: ''
+introduction_callout_3:
+  title: ''
+  sub-title: ''
+  body: ''
+unit_features: []
+kitchen: []
 ---
