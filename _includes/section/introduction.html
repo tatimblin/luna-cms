@@ -46,12 +46,14 @@
                  </ul>
              </div>
 
-             <div class="intro-text-copy intro-item">
-                 <h2>Find Clarity</h2>
-                 <h6>APARTMENTS</h6>
-                 <p>Life is hectic, and finding a quiet place to crash or study for a few hours is essential. Luna’s studio, 1-bedroom, and 2-bedroom apartments for rent are designed to offer the privacy you need to get the job done. Choose from fully-furnished, unfurnished, and pet-friendly units and make Luna your peaceful escape. </p>
-                 <br><div class="btn"><a href="images/LunaonPine_Floorplans.pdf" target="_blank">Download Floorplan</a></div>
-             </div>
+            {% if page.introduction_callout_1 %}
+            <div class="intro-text-copy intro-item">
+                <h2>{{ page.introduction_callout_1.title }}</h2>
+                <h6>{{ page.introduction_callout_1.sub_title }}</h6>
+                <p>{{ page.introduction_callout_1.body }}</p>
+                <br><div class="btn"><a href="images/LunaonPine_Floorplans.pdf" target="_blank">Download Floorplan</a></div>
+            </div>
+            {% endif %}
 
         </div>
         
