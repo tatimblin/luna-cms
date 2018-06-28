@@ -1,0 +1,9 @@
+---
+hide_body: false
+is_partial: false
+fields:
+- type: text
+  default: Tristan Timblin
+  label: Author
+  name: author
+  description: Who wrote this
