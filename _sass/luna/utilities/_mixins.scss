@@ -1,0 +1,193 @@
+/*
+ * Mixins
+ *
+ * This file collects all of the mixins used throughout the website.
+ *
+ *****************************************************************************/
+
+
+/*
+ * Event wrapper
+ *
+ * @param {Bool} $self [false] - Whether or not to include
+ current selector
+ *
+ *********************************************************/
+
+@mixin on-event($self: false) {
+    @if $self {
+        &,
+        &:hover,
+        &:active,
+        &:focus {
+            @content;
+        }
+    } @else {
+        &:hover,
+        &:active,
+        &:focus {
+            @content;
+        }
+    }
+}
+
+
+/*
+ * Make a context based selector a little more friendly
+ *
+ * @param {String} $context
+ *
+ *********************************************************/
+
+@mixin when-inside($context) {
+    #{$context} & {
+        @content;
+    }
+}
+
+
+/*
+ * Make certain fonts render sharper on OSX
+ *
+ *********************************************************/
+
+@mixin font-smoothing() {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+
+/*
+ * Clearfix
+ *
+ *********************************************************/
+
+@mixin clearfix {
+    &::after {
+        clear: both;
+        content: '';
+        display: table;
+    }
+}
+
+
+/*
+ * Maintain aspect ratio on divs with background images
+ (mimic native image scaling)
+ *
+ * @include responsive-ratio(16,9);
+ *
+ *********************************************************/
+
+@mixin responsive-ratio($x,$y, $pseudo: false) {
+    $padding: unquote( ( $y / $x ) * 100 + '%' );
+    @if $pseudo {
+        &:before {
+            @include pseudo($pos: relative);
+            width: 100%;
+            padding-top: $padding;
+        }
+    } @else {
+        padding-top: $padding;
+    }
+}
+
+
+/*
+ * Background opacity with fallback for older browsers
+ *
+ *********************************************************/
+
+@mixin bg-opacity($color, $opacity: 0.3) {
+    background: $color;
+    background: rgba($color, $opacity);
+}
+
+
+/*
+ * Create a transparent overlay
+ *
+ *********************************************************/
+
+@mixin overlay($color, $opacity: 0.3) {
+    background: $color;
+    background: rgba($color, $opacity);
+	content: '';
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+
+/*
+ * Visually hide element
+ *
+ *********************************************************/
+
+@mixin hide() {
+	opacity: 0;
+	visibility: hidden;
+}
+
+
+/*
+ * Visually show element
+ *
+ *********************************************************/
+@mixin show() {
+	opacity: 1;
+	visibility: visible;
+}
+
+
+/*
+ * Create background image that centers & covers parent
+ container
+ *
+ *********************************************************/
+
+@mixin bg-image-cover($color: transparent, $image: none) {
+	background: $color $image no-repeat center center;
+	background-size: cover;
+}
+
+
+/*
+ * Add common rules to pseudo elements
+ *
+ *********************************************************/
+
+@mixin pseudo($display: block, $pos: absolute, $content: '') {
+    content: $content;
+    display: $display;
+    position: $pos;
+}
+
+
+/*
+ * Make text CTA
+ *
+ *********************************************************/
+
+@mixin cta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    h2 {
+        text-align: center;
+        line-height: $line-height-sm;
+        
+    }
+    .btn {
+        // margin-top: $gutter-width;
+    }
+}
+
+
+
+
+
