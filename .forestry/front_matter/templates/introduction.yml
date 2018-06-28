@@ -1,0 +1,62 @@
+---
+hide_body: false
+is_partial: true
+fields:
+- type: field_group
+  name: introduction_callout_1
+  label: Introduction Callout 1
+  fields:
+  - type: text
+    default: You Have Big Dreams
+    label: Sub-title
+    name: sub_title
+  - type: text
+    name: title
+    label: Title
+    default: Make Them Happen At Luna
+  - type: textarea
+    name: body
+    label: Body
+    default: Luna is an apartment building...
+- type: field_group
+  name: introduction_callout_2
+  label: Introduction Callout 2
+  fields:
+  - type: text
+    name: title
+    label: Title
+- type: field_group
+  name: introduction_callout_3
+  label: Introduction Callout 3
+  fields:
+  - type: text
+    name: title
+    label: Title
+    default: Find Clarity
+  - type: text
+    name: sub-title
+    label: Sub-title
+    default: Apartments
+  - type: textarea
+    name: body
+    label: Body
+    default: Life is hectic...
+- type: field_group_list
+  name: unit_features
+  label: Unit Features
+  fields:
+  - type: text
+    name: feature_item
+    label: Feature Item
+    default: Pet Friendly Units
+- type: field_group_list
+  name: kitchen
+  label: Kitchen
+  fields:
+  - type: field_group_list
+    name: kitchen_features
+    label: Kitchen Features
+    fields:
+    - type: text
+      name: kitchen_item
+      label: Kitchen Item
