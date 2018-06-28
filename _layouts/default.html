@@ -3,15 +3,17 @@
 
   {% include head.html %}
 
-  <body class="page-{{page.slug}} page-{{ page.layout }}">
+  <body class="page-{{page.slug}} page-{{ page.layout }} stop-scrolling">
 
-    {% include header.html %}
+    {% include header/header.html %}
 
     <div class="page-content">
         {{ content }}
     </div>
 
     {% include footer.html %}
+
+    {% include resource.html %}
 
   </body>
 

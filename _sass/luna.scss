@@ -9,8 +9,8 @@
 
 
 // 1. Sass frameworks/Codekit bundles
-@import 'bourbon';
-@import 'neat';
+@import "luna/bourbon/bourbon";
+@import 'luna/neat/neat';
 
 // 2. Configuration and helpers
 @import
