@@ -9,6 +9,7 @@ introduction_callout_1:
     within it. Imagine late-night study sessions that lead to groundbreaking discoveries,
     rooftop stargazing that ignites innovation, and next door neighbors who challenge
     your way of thinking.
+  undefined: "/uploads/luna-tenant-lookingBack.png"
 introduction_callout_2:
   title: ''
 introduction_callout_3:
