@@ -17,3 +17,5 @@ fields:
     - type: text
       name: price
       label: Price
+    config:
+      labelField: price
