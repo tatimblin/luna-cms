@@ -54,7 +54,7 @@ undefined:
 page_sections: []
 ---
 
-{% for block in homepage.page_sections %}
+{% for block in page.page_section %}
 
     {% assign template = block.template %}
     {% case template%}
