@@ -4,8 +4,8 @@ hide_body: false
 is_partial: true
 fields:
 - type: field_group_list
-  name: hero_slider
-  label: Hero Slider
+  name: hero_sliders
+  label: Hero Sliders
   config:
     max: '6'
   fields:

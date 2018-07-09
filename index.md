@@ -22,7 +22,7 @@ introduction_callout_3:
     unfurnished, and pet-friendly units and make Luna your peaceful escape.
 unit_features: []
 kitchen: []
-hero_slider:
+hero_sliders:
 - hero_slider_title: Find Clarity
   hero_slider_body: Private, peaceful apartments to focus or relax in.
 - hero_slider_image: uploads/luna-tenant-lookingBack.png
@@ -62,3 +62,31 @@ undefined:
     - kitchen_item: Designer-selected cabinetry, hardware, fixtures, and finishes
 page_sections: []
 ---
+
+{% for block in homepage.page_sections %}
+
+    {% assign template = block.template %}
+    {% case template%}
+    
+    {% when 'introduction' %}
+
+        {% include section/introduction.html %}
+
+    {% when 'apartment' %}
+
+        {% include section/apartments.html %}
+
+    {% when 'amenity' %}
+
+        {% include section/amenities.html %}
+
+    {% when 'neighborhood' %}
+
+        {% include section/neighborhood.html %}
+
+    {% when 'contact' %}
+
+        {% include section/contact.html %}
+
+    {% endcase %}
+{% endfor %}
