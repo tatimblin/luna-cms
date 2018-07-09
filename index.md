@@ -40,4 +40,22 @@ undefined:
   - hero_slider_image: uploads/luna-tenant-lookingBack.png
     hero_slider_title: Find Clarity
     hero_slider_body: Private, peaceful apartments to focus or relax in.
+- template: introduction
+  introduction_callout_1:
+    sub_title: You Have Big Dreams
+    title: Make Them Happen At Luna
+    body: Luna is an apartment building...
+    image: uploads/luna-tenant-lookingBack.png
+  introduction_callout_3:
+    title: Find Clarity
+    sub-title: Apartments
+    body: Life is hectic...
+  introduction_callout_2:
+    title: Come Home to a Place That Illuminates You
+  unit_features:
+  - feature_item: Pet Friendly Units
+  - feature_item: Pet Friendly Units
+  kitchen:
+  - kitchen_features:
+    - kitchen_item: Designer-selected cabinetry, hardware, fixtures, and finishes
 ---
