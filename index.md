@@ -23,6 +23,8 @@ introduction_callout_3:
 unit_features: []
 kitchen: []
 hero_slider:
+- hero_slider_title: Find Clarity
+  hero_slider_body: Private, peaceful apartments to focus or relax in.
 - hero_slider_image: uploads/luna-tenant-lookingBack.png
   hero_slider_title: Find Clarity
   hero_slider_body: Private, peaceful apartments to focus or relax in.
@@ -58,4 +60,5 @@ undefined:
   kitchen:
   - kitchen_features:
     - kitchen_item: Designer-selected cabinetry, hardware, fixtures, and finishes
+page_sections: []
 ---
