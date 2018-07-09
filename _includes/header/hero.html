@@ -5,7 +5,7 @@
                 
             </div>
             <div class="grid-item grid-item-gallery grid-copy">
-                {% for hero_sliders in page.hero_slider %}
+                {% for hero_slider in page.hero_sliders %}
                 <div class="grid-item-gallery-cell">
                     <h4>{{ hero_slider.hero_slider_title }}</h4>
                     <h3>{{ hero_slider.hero_slider_body }}</h3>
@@ -15,12 +15,14 @@
         </div>
         <div class="grid-right">
             <div class="grid-top">
+                {% if page.hero_cta %}
                 <div class="grid-item grid-copy">
-                    <h2>Apartments for the<br /> next phase in life</h2>
+                    <h2>{{ page.hero_cta.hero_cta_callout }}</h2>
                     <div class="btn">
                         <a href="mailto:rentals@equinoxmc.com?subject=Luna on Pine - Website Leasing Inquiry">Check Availability</a>
                     </div>
                 </div>
+                {% endif %}
                 <div class="grid-item grid-img" style="background-image: url('images/luna-bike.png');" alt="Bike to class at Luna on Pine">
                     
                 </div>

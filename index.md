@@ -22,26 +22,17 @@ introduction_callout_3:
     unfurnished, and pet-friendly units and make Luna your peaceful escape.
 unit_features: []
 kitchen: []
-hero_slider:
+hero_sliders:
 - hero_slider_title: Find Clarity
   hero_slider_body: Private, peaceful apartments to focus or relax in.
 - hero_slider_image: uploads/luna-tenant-lookingBack.png
   hero_slider_title: Find Clarity
   hero_slider_body: Private, peaceful apartments to focus or relax in.
 hero_cta:
-  hero_cta_callout: ''
-  hero_cta_button: ''
-  hero_cta_link: ''
+  hero_cta_callout: 'Apartments for the next phase in life'
+  hero_cta_button: 'Check Availability'
+  hero_cta_link: 'https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=rentals@equinoxmc.com&su=Luna%20on%20Pine%20-%20Website%20Leasing%20Inquiry'
 undefined:
-- template: hero
-  hero_cta:
-    hero_cta_callout: Apartments for the next phase in life
-    hero_cta_button: Check Availability
-    hero_cta_link: https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=rentals@equinoxmc.com&su=Luna%20on%20Pine%20-%20Website%20Leasing%20Inquiry
-  hero_slider:
-  - hero_slider_image: uploads/luna-tenant-lookingBack.png
-    hero_slider_title: Find Clarity
-    hero_slider_body: Private, peaceful apartments to focus or relax in.
 - template: introduction
   introduction_callout_1:
     sub_title: You Have Big Dreams
@@ -62,3 +53,31 @@ undefined:
     - kitchen_item: Designer-selected cabinetry, hardware, fixtures, and finishes
 page_sections: []
 ---
+
+{% for block in homepage.page_sections %}
+
+    {% assign template = block.template %}
+    {% case template%}
+    
+    {% when 'introduction' %}
+
+        {% include section/introduction.html %}
+
+    {% when 'apartment' %}
+
+        {% include section/apartments.html %}
+
+    {% when 'amenity' %}
+
+        {% include section/amenities.html %}
+
+    {% when 'neighborhood' %}
+
+        {% include section/neighborhood.html %}
+
+    {% when 'contact' %}
+
+        {% include section/contact.html %}
+
+    {% endcase %}
+{% endfor %}
