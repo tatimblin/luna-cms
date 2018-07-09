@@ -21,7 +21,6 @@ fields:
   template: hero
 - type: blocks
   template_types:
-  - amenities
   - apartment
   - introduction
   label: Page Sections
