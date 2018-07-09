@@ -22,4 +22,12 @@ introduction_callout_3:
     unfurnished, and pet-friendly units and make Luna your peaceful escape.
 unit_features: []
 kitchen: []
+hero_slider:
+- hero_slider_image: uploads/luna-tenant-lookingBack.png
+  hero_slider_title: Find Clarity
+  hero_slider_body: Private, peaceful apartments to focus or relax in.
+hero_cta:
+  hero_cta_callout: ''
+  hero_cta_button: ''
+  hero_cta_link: ''
 ---
