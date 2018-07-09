@@ -6,6 +6,9 @@ fields:
   name: introduction_callout_1
   label: Introduction Callout 1
   fields:
+  - type: file
+    label: Image
+    name: image
   - type: text
     default: You Have Big Dreams
     label: Sub-title

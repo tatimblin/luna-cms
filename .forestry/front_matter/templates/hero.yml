@@ -1,0 +1,35 @@
+---
+hide_body: false
+is_partial: true
+fields:
+- type: field_group_list
+  name: hero_slider
+  label: Hero Slider
+  config:
+    max: '6'
+  fields:
+  - type: file
+    name: hero_slider_image
+    label: Hero Slider Image
+  - type: text
+    name: hero_slider_title
+    label: Hero Slider Title
+  - type: textarea
+    name: hero_slider_body
+    label: Hero Slider Body
+- type: field_group
+  name: hero_cta
+  label: Hero CTA
+  fields:
+  - type: text
+    name: hero_cta_callout
+    label: Hero CTA Callout
+    default: Apartments for the next phase in life
+  - type: text
+    name: hero_cta_button
+    label: Hero CTA Button
+    default: Check Availability
+  - type: text
+    name: hero_cta_link
+    label: Hero CTA Link
+    default: https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=rentals@equinoxmc.com&su=Luna%20on%20Pine%20-%20Website%20Leasing%20Inquiry

@@ -14,9 +14,9 @@ fields:
   name: layout
   config:
     required: true
-- type: include
-  template: introduction
-  label: Introduction
-  name: introduction
+- type: blocks
+  template_types:
+  - hero
+  - introduction
 pages:
 - index.md
