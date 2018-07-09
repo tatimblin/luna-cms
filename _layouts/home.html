@@ -2,12 +2,30 @@
 layout: default
 ---
 
-{% include section/introduction.html %}
+{% for block in page.page_sections %}
 
-{% include section/apartments.html %}
+    {% assign template = block.template %}
+    {% case template%}
+    
+    {% when 'introduction' %}
 
-{% include section/amenities.html %}
+        {% include section/introduction.html %}
 
-{% include section/neighborhood.html %}
+    {% when 'apartment' %}
 
-{% include section/contact.html %}
+        {% include section/apartments.html %}
+
+    {% when 'amenity' %}
+
+        {% include section/amenities.html %}
+
+    {% when 'neighborhood' %}
+
+        {% include section/neighborhood.html %}
+
+    {% when 'contact' %}
+
+        {% include section/contact.html %}
+
+    {% endcase %}
+{% endfor %}
