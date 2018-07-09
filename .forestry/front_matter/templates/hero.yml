@@ -1,0 +1,19 @@
+---
+hide_body: false
+is_partial: true
+fields:
+- type: field_group_list
+  name: hero_slider
+  label: Hero Slider
+  config:
+    max: '6'
+  fields:
+  - type: file
+    name: hero_slider_image
+    label: Hero Slider Image
+  - type: text
+    name: hero_slider_title
+    label: Hero Slider Title
+  - type: textarea
+    name: hero_slider_body
+    label: Hero Slider Body
