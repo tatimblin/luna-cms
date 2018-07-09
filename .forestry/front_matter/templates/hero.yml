@@ -15,9 +15,11 @@ fields:
   - type: text
     name: hero_slider_title
     label: Hero Slider Title
+    default: Find Clarity
   - type: textarea
     name: hero_slider_body
     label: Hero Slider Body
+    default: Private, peaceful apartments to focus or relax in.
 - type: field_group
   name: hero_cta
   label: Hero CTA
