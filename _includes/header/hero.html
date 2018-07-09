@@ -5,22 +5,12 @@
                 
             </div>
             <div class="grid-item grid-item-gallery grid-copy">
+                {% for hero_sliders in page.hero_slider %}
                 <div class="grid-item-gallery-cell">
-                    <h4>Find Clarity</h4>
-                    <h3>Private, peaceful apartments to focus or relax in.</h3>
+                    <h4>{{ hero_slider.hero_slider_title }}</h4>
+                    <h3>{{ hero_slider.hero_slider_body }}</h3>
                 </div>
-                <div class="grid-item-gallery-cell">
-                    <h4>Find Community</h4>
-                    <h3>Shared amenity spaces for a brighter social life.</h3>
-                </div>
-                <div class="grid-item-gallery-cell">
-                    <h4>Find Everything Else</h4>
-                    <h3>A vibrant location in the core of University City.</h3>
-                </div>
-                <div class="grid-item-gallery-cell">
-                    <h4>Lease Today</h4>
-                    <h3>Now accepting reservations for August 2018 move-ins.</h3>
-                </div>
+                {% endfor %}
             </div>
         </div>
         <div class="grid-right">
@@ -37,14 +27,16 @@
             </div>
             <div class="grid-item grid-img">
                 <div class="grid-item-img-gallery">
-                    <div class="grid-item-img-gallery-cell" style="background-image: url('images/luna-living-room.jpg');" alt="Luna living room render">
+                    {% for hero_sliders in page.hero_slider %}
+                    <div class="grid-item-img-gallery-cell" style="background-image: url('{{ hero_slider.hero_slider_body }}');" alt="Luna living room render">
                     </div>
-                    <div class="grid-item-img-gallery-cell" style="background-image: url('images/luna_ClubRoom.jpg');" alt="Luna desk space">
+                    {% endfor %}
+                    <!-- <div class="grid-item-img-gallery-cell" style="background-image: url('images/luna_ClubRoom.jpg');" alt="Luna desk space">
                     </div>
                     <div class="grid-item-img-gallery-cell" style="background-image: url('images/luna-exterior.jpg');" alt="Luna exterior render">
                     </div>
                     <div class="grid-item-img-gallery-cell" style="background-image: url('images/luna-bed.jpg');" alt="Luna on Pine bedroom">
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
