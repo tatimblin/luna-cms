@@ -1,0 +1,21 @@
+---
+label: Apartment
+hide_body: false
+is_partial: true
+fields:
+- type: field_group_list
+  name: bedrooms
+  label: Bedrooms
+  config:
+    max: '3'
+    min: '1'
+  fields:
+  - type: field_group_list
+    name: units
+    label: Units
+    fields:
+    - type: text
+      name: price
+      label: Price
+    config:
+      labelField: price

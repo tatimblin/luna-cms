@@ -29,9 +29,9 @@ hero_sliders:
   hero_slider_title: Find Clarity
   hero_slider_body: Private, peaceful apartments to focus or relax in.
 hero_cta:
-  hero_cta_callout: 'Apartments for the next phase in life'
-  hero_cta_button: 'Check Availability'
-  hero_cta_link: 'https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=rentals@equinoxmc.com&su=Luna%20on%20Pine%20-%20Website%20Leasing%20Inquiry'
+  hero_cta_callout: Apartments for the next phase in life
+  hero_cta_button: Check Availability
+  hero_cta_link: https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=rentals@equinoxmc.com&su=Luna%20on%20Pine%20-%20Website%20Leasing%20Inquiry
 undefined:
 - template: introduction
   introduction_callout_1:
@@ -51,7 +51,16 @@ undefined:
   kitchen:
   - kitchen_features:
     - kitchen_item: Designer-selected cabinetry, hardware, fixtures, and finishes
-page_sections: []
+page_sections:
+- template: introduction
+  introduction_callout_1:
+    sub_title: You Have Big Dreams
+    title: Make Them Happen At Luna
+    body: Luna is an apartment building...
+  introduction_callout_3:
+    title: Find Clarity
+    sub-title: Apartments
+    body: Life is hectic...
 ---
 
 {% for block in page.page_section %}

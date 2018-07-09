@@ -21,6 +21,7 @@ fields:
   template: hero
 - type: blocks
   template_types:
+  - apartment
   - introduction
   label: Page Sections
   name: page_sections
