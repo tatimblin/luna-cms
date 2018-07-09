@@ -15,6 +15,10 @@ fields:
   config:
     required: true
 - type: include
+  name: hero
+  label: Hero
+  template: hero
+- type: include
   template: introduction
   label: Introduction
   name: introduction
