@@ -18,5 +18,7 @@ fields:
   template_types:
   - hero
   - introduction
+  label: Page Sections
+  name: page_sections
 pages:
 - index.md
